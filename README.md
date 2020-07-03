@@ -1,11 +1,4 @@
-# Spring Cloud Function using AWS Adapter example
+Example on the roman calculator with curl
 
-## Exposed Function as API Endpoint using AWS API Gateway
-`Hello.java` is exposed as function to the AWS Request Handler using `SpringBootRequestHandler`.
-`APIGatewayProxyRequestEvent` is the input object and `APIGatewayProxyResponseEvent` is the response object.
 
-### Command used:
-
-```
-curl -X POST -H 'Content-Type: text/plain' <API_GATEWAY_URL> -d 'TechPrimers' -i
-```
+`curl -X POST -H 'Content-Type: text/plain' https://7puzybdc8g.execute-api.us-east-2.amazonaws.com/default/Spring-Cloud_Function_Lambda -d 'I + II' -i`
