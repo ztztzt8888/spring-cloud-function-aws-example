@@ -1,25 +1,11 @@
 package com.techprimers.serverless;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Component
+@Service
 public class RomanNumeralsCalculator {
-
-//    public static void main(String[] args) {
-//        RomanNumeralsCalculator calculator = new RomanNumeralsCalculator();
-//        Scanner scanner = new Scanner(System.in);
-//        while (true) {
-//            System.out.println("Please type your equation:");
-//            double result = calculator.calculate(scanner.nextLine());
-//            if (result % 1 == 0) {
-//                System.out.println((int) result);
-//            } else {
-//                System.out.println(result);
-//            }
-//        }
-//    }
 
     public double calculate(String romanInput) {
         if (romanInput == null) {
